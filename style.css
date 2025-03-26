@@ -25,6 +25,17 @@
     }
 
 }
-.help{
-    color: rgba(92, 66, 33, 0.548);
+ 
+@keyframes logo {
+    0%{
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.animate-logo{
+    animation: logo linear infinite 10s;
 }
