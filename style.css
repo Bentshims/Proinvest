@@ -25,14 +25,16 @@
     }
 
 }
+.scale-object{
+    animation: bg--scale 10s linear infinite;
+}
  
 @keyframes logo {
-    from{
-        transform: translateX(0);
+    from {
+        transform: translateX(0%);
     }
-
-    to{
-        transform: translateX(-50%);
+    to {
+        transform: translateX(-270%);
     }
 }
 
