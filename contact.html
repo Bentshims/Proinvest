@@ -15,7 +15,7 @@
         </div>
         <div>
             <div class="links hidden md:flex md:gap-7">
-                <div><a href="#">Acceuil</a></div>
+                <div><a href="home.html" class="focus:text-green-500 active:text-green-500">Acceuil</a></div>
                 <div><a href="#">Nos programme</a></div>
                 <div><a href="#">Contact</a></div>
             </div>
@@ -23,7 +23,7 @@
                 <i class="bi bi-list text-4xl"></i>
             </div>
         </div>
-        <button class="bg-green-300 text-white rounded-xl hidden px-4 py-2 md:block transition ease-in-out duration-500 hover:bg-green-600">
+        <button class="bg-green-600 text-white rounded-xl hidden px-4 py-2 md:block transition ease-in-out duration-500 hover:bg-green-300">
             Faire un Don
         </button>
     </header>
@@ -37,7 +37,7 @@
         </section>
         <section class="section-troisieme px-[20px] py-[64px]">
             <div>
-                <div class="pb-10">
+                <div class="pb-10 md:w-1/2 h-auto">
                     <p class="pb-7">
                         Contact
                     </p>
@@ -48,8 +48,8 @@
                         Pour toute question ou information, n'hésitez pas à nous contacter dès aujourd'hui. 
                     </p>
                 </div>
-                <div class="space-y-8 py-10  flex flex-col items-center text-center">
-                    <div class="space-y-2">
+                <div class="space-y-8 py-10  flex flex-col items-center text-center md:flex-row md:space-y-0 md:space-x-5">
+                    <div class="space-y-2 md:w-1/3">
                         <i class="bi bi-envelope text-4xl font-bold"></i>
                         <h4 class="font-bold">
                             Email
@@ -61,7 +61,7 @@
                             contact@proinvest.cd
                         </a>
                     </div>
-                    <div class="space-y-2">
+                    <div class="space-y-2 md:w-1/3">
                         <i class="bi bi-telephone text-4xl font-bold"></i>
                         <h4 class="font-bold">
                             Telephone
@@ -74,7 +74,7 @@
                         </p>
 
                     </div>
-                    <div class="space-y-2">
+                    <div class="space-y-2 md:w-1/3">
                         <i class="bi bi-geo-alt text-4xl font-bold"></i>
                         <h4 class="font-bold">
                             Bureau
@@ -88,7 +88,7 @@
                     </div>
                 </div>
             </div>
-            <div class="formulaire py-7">
+            <div class="formulaire py-7 md:py-14 md:px-[7rem]">
                 <form action="methode" class="space-y-6 position relative">
                     <div class="flex flex-col space-y-2">
                         <label for="name">Nom <span class="text-green-500">*</span></label>
@@ -111,9 +111,9 @@
                 </form>
             </div>
         </section>
-        <section class="donnation px-[20px] py-[64px]">
+        <section class="donnation px-[20px] py-[64px] md:flex flex-col items-center justify-center md:px-[7rem]">
             <div class="space-y-8">
-                <h2 class="text-2xl font-semibold text-green-500">
+                <h2 class="text-2xl font-semibold text-green-500 md:text-center">
                     Faites un don, et investissez dans un avenir plus vert !
                 </h2>
                 <p>
@@ -155,46 +155,28 @@
                         Chaque don compte ! Que ce soit pour un engagement modeste ou important, 
                         votre contribution nous rapproche toujours d’un monde plus durable.
                     </p>
-                    <div>
+                    <div class="flex gap-4">
                         <div>
-                            <i class="bi bi-geo-alt text-xl"></i>
+                            <i class="bi bi-geo-alt text-xl text-green-500"></i>
                         </div>
                         <p>
                             Rejoignez-nous dans cette mission ! Faites un don aujourd’hui et devenez acteur du changement.
                         </p>
                     </div>
                 </div>
-                <img src="Doing your part to leave the earth better than you found it is incredibly important! Take a look at some of the easiest ways to pitch in and Recycle_.jpeg" alt="" class="rounded-lg h-[16rem]">
                 <div class="flex justify-center">
                     <button class="bg-green-700 text-white rounded-xl px-4 py-2 transition ease-in-out duration-500 hover:bg-green-400 scale-object">
                         Je fais Un don
                     </button>
                 </div>
             </div>
+            <img src="Doing your part to leave the earth better than you found it is incredibly important! Take a look at some of the easiest ways to pitch in and Recycle_.jpeg" alt="" class="rounded-lg h-[16rem] md:h-auto mt-10">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
         </section>
 
     </main>
     <footer class="flex flex-col items-center justify-center pt-[64px] pb-2 bg-[rgba(124,124,124,0.20)]">
-        <div class="flex flex-col items-center justify-center space-y-3">
+        <div class="flex flex-col items-center justify-center space-y-3 md:flex-row md:justify-between md:gap-[5rem]">
             <div class="logo w-[4rem]">
                 <img src="logo.svg" alt="logo proinvest">
             </div>
@@ -218,14 +200,16 @@
                 </div>
 
             </div>
+
         </div>
         <div>
-            <div class="border border-gray-500 my-4 text-gray-900"></div>
+            <div class="border border-gray-500 my-4 text-gray-900 md:w-[60rem] lg:w-[100rem]"></div>
             <p class="text-center text-sm text-gray-500 px-3">
                 © 2025 PROINVEST GREEN All rights reserved.
                 Designed by Ben Tshimanga
             </p>
         </div>
+
     </footer>
 </body>
 </html>
