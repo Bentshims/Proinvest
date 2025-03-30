@@ -1,4 +1,12 @@
 document.addEventListener(`DOMContentLoaded`,()=>{
+    // animation texte 
+    AOS.init({
+        duration: 1700,
+        easing:`ease-in`,
+        offset:100,
+        delay:200,
+        once: false,
+    })
 
     // burger menu
 

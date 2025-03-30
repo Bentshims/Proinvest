@@ -8,9 +8,28 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <title>Nos Programme </title>
 </head>
-<body>
-    <header>
+<body class="bg-black text-white">
+    <header class="flex items-center justify-between py-4 px-2">
+        <div>
+            <img src="logo.svg" alt="" class="logo w-[4rem]">
+        </div>
+        <div>
+            <div class="links hidden md:flex md:gap-7">
+                <div><a href="home.html">Acceuil</a></div>
+                <div><a href="nosProgramme.html">Nos programme</a></div>
+                <div><a href="contact.html">Contact</a></div>
+            </div>
+        </div>
+        <div class="flex items-center gap-3">
+            <div class="burger transition duration-500 ease transform hover:scale-125 cursor pointer md:hidden">
+                <i class="bi bi-list text-4xl"></i>
+            </div>
 
+            <button class="bg-green-700 text-white rounded-xl  px-4 py-2 md:block transition ease-in-out duration-500 hover:bg-green-400">
+                Faire un Don
+            </button>
+        </div>
+       
     </header>
     <main>
 
@@ -47,11 +66,41 @@
         </section>
 
     </main>
-    <footer>
+    <footer class="flex flex-col items-center justify-center pt-[64px] pb-2 bg-[rgba(124,124,124,0.20)]">
+        <div class="flex flex-col items-center justify-center space-y-3 md:flex-row md:justify-between md:gap-[5rem]">
+            <div class="logo w-[4rem]">
+                <img src="logo.svg" alt="logo proinvest">
+            </div>
+            <div class="links md:flex md:gap-7 text-center text-gray-500">
+                <div><a href="#">Acceuil</a></div>
+                <div><a href="#">Nos programme</a></div>
+                <div><a href="#">Contact</a></div>
+            </div>
+            <div class="social flex items-center gap-4 text-gray-500">
+                <div>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                </div>
+                <div>
+                   <a href="#"> <i class="bi bi-instagram"></i></a>
+                </div>
+                <div>
+                    <a href="#"><i class="bi bi-twitter-x"></i></a>
+                </div>
+                <div>
+                   <a href="#"> <i class="bi bi-linkedin"></i></a>
+                </div>
+
+            </div>
+
+        </div>
+        <div>
+            <div class="border border-gray-500 my-4 text-gray-900 md:w-[60rem] lg:w-[100rem]"></div>
+            <p class="text-center text-sm text-gray-500 px-3">
+                © 2025 PROINVEST GREEN All rights reserved.
+                Designed by Ben Tshimanga
+            </p>
+        </div>
 
     </footer>
-
-
-    
 </body>
 </html>
