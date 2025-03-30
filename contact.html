@@ -19,7 +19,7 @@
                 <div><a href="#">Nos programme</a></div>
                 <div><a href="#">Contact</a></div>
             </div>
-            <div class="md:hidden">
+            <div class="burger md:hidden">
                 <i class="bi bi-list text-4xl"></i>
             </div>
         </div>
@@ -30,8 +30,8 @@
  
     <main>
 
-        <section class="section-principal">
-            <img src="Doing your part to leave the earth better than you found it is incredibly important! Take a look at some of the easiest ways to pitch in and Recycle_.jpeg" alt="photo principal">
+        <section class="section-principal w-screen h-auto">
+            <img src="Doing your part to leave the earth better than you found it is incredibly important! Take a look at some of the easiest ways to pitch in and Recycle_.jpeg" alt="photo principal " class="w-full h-auto">
 
             
         </section>
@@ -50,7 +50,6 @@
                 </div>
                 <div class="space-y-8 py-10  flex flex-col items-center text-center">
                     <div class="space-y-2">
-                        <!-- <img src="" alt="envelope icon"> -->
                         <i class="bi bi-envelope text-4xl font-bold"></i>
                         <h4 class="font-bold">
                             Email
@@ -63,7 +62,6 @@
                         </a>
                     </div>
                     <div class="space-y-2">
-                        <!-- <img src="" alt="telephone icon"> -->
                         <i class="bi bi-telephone text-4xl font-bold"></i>
                         <h4 class="font-bold">
                             Telephone
@@ -77,7 +75,6 @@
 
                     </div>
                     <div class="space-y-2">
-                        <!-- <img src="" alt="localisation icon"> -->
                         <i class="bi bi-geo-alt text-4xl font-bold"></i>
                         <h4 class="font-bold">
                             Bureau
@@ -91,58 +88,51 @@
                     </div>
                 </div>
             </div>
-            <div class="formulaire py-7 border border-white">
-                <form action="methode" class="flex flex-col items-center space-y-3 position relative border border-white">
-
-                    <div class="flex flex-col">
+            <div class="formulaire py-7">
+                <form action="methode" class="space-y-6 position relative">
+                    <div class="flex flex-col space-y-2">
                         <label for="name">Nom <span class="text-green-500">*</span></label>
-                        <input type="text" id="name" name="name" required class="bg-[#191919] rounded-md border focus:border-2 focus:border-green-900 outline-none w-[20rem] h-[2rem] pl-2">
+                        <input type="text" id="name" name="name" required class="bg-[#191919] rounded-md border focus:border-2 focus:border-green-900 outline-none w-full h-[2rem] pl-2">
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col space-y-2">
                         <label for="email">Email <span class="text-green-500">*</span></label>
-                        <input type="email" id="mail" name="mail"required class="bg-[#191919] border focus:border-2 focus:border-green-900 outline-none rounded-lg w-[20rem] h-[2rem] pl-2">
+                        <input type="email" id="mail" name="mail"required class="bg-[#191919] border focus:border-2 focus:border-green-900 outline-none rounded-lg w-full h-[2rem] pl-2">
                     </div>
-                    <div class="flex flex-col">
+                    <div class="flex flex-col space-y-2">
                         <label for="message">Message <span class="text-green-500">*</span></label>
-                        <input type="text" id="message" name="message" required placeholder="Ecrivez votre message..." class="bg-[#191919] border focus:border-2 focus:border-green-900 outline-none  rounded-lg h-[10rem] w-[20rem] pl-2">
+                        <textarea name="text" id="message" class="bg-[#191919] border focus:border-2 focus:border-green-900 outline-none  rounded-lg h-[10rem] w-full pl-2 pt-2 text-gray-500"> Ecrivez votre message... </textarea>
     
                     </div>
-                    <div class="position relative w-full h-[3rem] border border-white">
-                        <button type="submit" class="bg-green-700 text-white rounded-xl px-4 py-2 transition ease-in-out duration-500 hover:bg-green-400 position absolute left-[7%] bottom-0">
+                    <div class="position relative w-full h-[3rem]">
+                        <button type="submit" class="bg-green-700 text-white rounded-xl px-4 py-2 transition ease-in-out duration-500 hover:bg-green-400" >
                             Soumettre
                         </button>
                     </div>
                 </form>
             </div>
         </section>
-        <section class="section-quatrieme px-[20px] py-[64px] space-y-7 bg-[#191919]">
-            <div class="space-y-5">
-                <p>
-                    Chez Proinvest Green,nous transformons les déchets en opportunités durables.
-                    Que vous soyez une entreprise,une municipalité ou un acteur du secteur médical,
-                    nous vous offrons des solutions innovantes et responsables pour une gestion efficace de vos déchets.
-                </p>
-                <p>
-                    vous voulez nous soutenir ou participer a l'evenement CONGO WASTE MEETING?
-                    -Inscrivez-voys et participez au plus grand évènement de l'économie circulaire en RDC.
+        <section class="donnation">
 
-                </p>
-            </div>
-            <img src="Doing your part to leave the earth better than you found it is incredibly important! Take a look at some of the easiest ways to pitch in and Recycle_.jpeg" alt="photo de la carte de la RDC" class="rounded-xl">
-        </section>
-        <section class="section-cinquieme px-[20px] py-[64px] space-y-7 bg-[#314634]">
-            <h2 class="text-3xl text-center font-bold capitalize">
-                A Propos de l'évènement CONGO WASTE MEETING
 
-            </h2>
-            <div class="space-y-5">
-                <p>Le Congo Waste Meetings (COWASTE en sigle) est un événement annuel incontournable spécialement dédié à la gestion des déchets sous toutes ses formes et de toute catégorie ainsi qu’à la Promotion des Implications RSE des Entreprise extractives et industriel en faveur des communautés locales en RDC. </p>
-                <p>COWASTE se présente donc comme le 1er et unique salon en RDC qui offre un cadre d’Echange sur les nouvelles technologies des solutions innovantes et durables liées au traitement, à la valorisation et transformation de nos des déchets issue de nos activités industriel, professionnel et ménagère. </p>
-                <p>Le salon COWASTE réunit des experts, tant internationale que Nationale dans le domaine de protection environnemental, des industriels, des entreprises extractives, ainsi que des représentants des collectivités et des institutions, pour échanger sur les solutions de nos sur les problèmes de gestion de nos déchets.</p>
-                <p>Congo Waste Meetings, fait la promotion de vos activités et implication RSE en faveur des communautés locale et au profit de nos génération avenir. Il est donc le cadre idéal de présenter au grand public la hauteur de vos implication dans le développement de la vie social de la population conforment au code d’investissement en vigueur en RDC.</p>
-            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             
         </section>
+
     </main>
     <footer class="flex flex-col items-center justify-center pt-[64px] pb-2 bg-[rgba(124,124,124,0.20)]">
         <div class="flex flex-col items-center justify-center space-y-3">
@@ -169,7 +159,6 @@
                 </div>
 
             </div>
-
         </div>
         <div>
             <div class="border border-gray-500 my-4 text-gray-900"></div>
