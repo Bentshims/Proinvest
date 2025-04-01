@@ -26,7 +26,7 @@
     animation: logo linear infinite 10s;
 }
 
-        
+/*         
 @keyframes open{
     0%{
         transform: translateX(-100%);
@@ -37,7 +37,7 @@
 }
 .open{
     animation: open 500ms linear;
-}
+} */
 /* @keyframes overlay{
     0%{
         transform: translateX(0%);
@@ -50,9 +50,9 @@
     animation: overlay 500ms linear forwards;
 } */
 
-.open{
+/* .open{
     transform: translateX(0%);
 }
 .close{
     transform: translateX(-100%);
-}
+} */
