@@ -19,7 +19,7 @@
         transform: translateX(100%);
     }
     100% {
-        transform: translateX(-270%);
+        transform: translateX(-300%);
     }
 }
 .animate-logo{
