@@ -3,6 +3,7 @@ document.addEventListener(`DOMContentLoaded`,()=>{
     const menuburgers = document.querySelectorAll(".burger");
     const overlayContainer = document.querySelector(".overlay-container");
     const closeoverlays = document.querySelectorAll("#closeBtn , .overlay-bg");
+    const overlayBg = document.querySelector(`.overlay-bg`);
     menuburgers.forEach(burger =>{
         burger.addEventListener(`click`,()=>{
             overlayContainer.classList.toggle(`-translate-x-full`);
