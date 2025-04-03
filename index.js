@@ -1,19 +1,26 @@
 document.addEventListener(`DOMContentLoaded`,()=>{
     // burger menu
+    const menuburgers = document.querySelectorAll(".burger");
+    const overlayContainer = document.querySelector(".overlay-container");
+    const closeoverlays = document.querySelectorAll("#closeBtn , .overlay-bg");
+    menuburgers.forEach(burger =>{
+        burger.addEventListener(`click`,()=>{
+            overlayContainer.classList.toggle(`-translate-x-full`);
+        })
+    })
 
-    document.addEventListener("DOMContentLoaded", function () {
-        const overlayContainer = document.querySelector(".overlay-container");
-        const menuButton = document.querySelector("#menuButton"); // Bouton pour ouvrir
-        const closeButton = document.querySelector(".overlay button"); // Bouton pour fermer
+    console.log(document.querySelectorAll(`#closeBtn`));
     
-        menuButton.addEventListener("click", function () {
-            overlayContainer.classList.remove("-translate-x-full");
-        });
     
-        closeButton.addEventListener("click", function () {
-            overlayContainer.classList.add("-translate-x-full");
-        });
-    });
+    closeoverlays.forEach(closeoverlay =>{
+        closeoverlay.addEventListener(`click`,()=>{
+            // if (!(overlayContainer.classList.contains(`-translate-x-full`))) {
+            // overlayContainer.classList.add(`-translate-x-full`);
+            // }
+            overlayContainer.classList.add(`-translate-x-full`);
+
+        })
+    })
     
 
 
