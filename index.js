@@ -1,46 +1,51 @@
 document.addEventListener(`DOMContentLoaded`,()=>{
-    // animation texte 
-    AOS.init({
-        duration: 1700,
-        easing:`ease-in`,
-        offset:100,
-        delay:200,
-        once: false,
-    })
-
     // burger menu
 
-    const overlay = document.querySelector(`.overlay`)
-    const menu_Burger = document.querySelectorAll(`.burger`);
-    const close_Btn = document.querySelector(`.close-Btn`);
-    const overlay_Bg = document.querySelector(`.overlay-bg`);
+    document.addEventListener("DOMContentLoaded", function () {
+        const overlayContainer = document.querySelector(".overlay-container");
+        const menuButton = document.querySelector("#menuButton"); // Bouton pour ouvrir
+        const closeButton = document.querySelector(".overlay button"); // Bouton pour fermer
+    
+        menuButton.addEventListener("click", function () {
+            overlayContainer.classList.remove("-translate-x-full");
+        });
+    
+        closeButton.addEventListener("click", function () {
+            overlayContainer.classList.add("-translate-x-full");
+        });
+    });
+    
 
-    menu_Burger.forEach(burger =>{
-        burger.addEventListener(`click`,()=>{
-            overlay.classList.add(`open`);
-        })
-    })
+
+  
    
 
-    console.log(menu_Burger,close_Btn,overlay_Bg);
-    
-    
-
-    // animation logos continue 
-
-    const container = document.querySelector(`.logos-container`);
-    const logos = document.querySelector(`.partner-logos`);
-    console.log(container,logos);
-    const logo_Clones = logos.cloneNode(true);
-    container.appendChild(logo_Clones);
-    console.log(container,logos,logo_Clones);
     
 
 
 
 
+
+
+
+
+    // animation texte 
+    AOS.init({
+    duration: 1700,
+    easing:`ease-in`,
+    offset:100,
+    delay:200,
+    once: false,
+
+    
+    
     
 
+
+
+
+    
+});
 
 
 
