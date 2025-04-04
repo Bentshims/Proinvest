@@ -130,7 +130,7 @@
                 </div>
             </div>
             <div data-aos="fade" class="formulaire py-7 md:py-14 md:px-[7rem]">
-                <form data-aos="fade" action="methode" class="space-y-6 position relative lg:flex flex-col items-center">
+                <form data-aos="fade" action="methode" class="space-y-6 position relative lg:flex flex-col items-center" id="form">
                     <div data-aos="fade" class="flex flex-col space-y-2 lg:w-1/2">
                         <label data-aos="fade" for="name">Nom <span class="text-green-500">*</span></label>
                         <input data-aos="fade" type="text" id="name" name="name" required class="bg-[#191919] rounded-md border focus:border-2 focus:border-green-900 outline-none w-full h-[2rem] pl-2">
@@ -139,13 +139,19 @@
                         <label data-aos="fade" for="email">Email <span class="text-green-500">*</span></label>
                         <input data-aos="fade" type="email" id="email" name="mail"required class="bg-[#191919] border focus:border-2 focus:border-green-900 outline-none rounded-lg w-full h-[2rem] pl-2">
                     </div>
+
+                    <div data-aos="fade" class="flex flex-col space-y-2 lg:w-1/2">
+                        <label data-aos="fade" for="subject">Sujet <span class="text-green-500">*</span></label>
+                        <input data-aos="fade" type="text" id="subject" name="subject"required class="bg-[#191919] border focus:border-2 focus:border-green-900 outline-none rounded-lg w-full h-[2rem] pl-2">
+                    </div>
+
                     <div data-aos="fade" class="flex flex-col space-y-2 lg:w-1/2">
                         <label data-aos="fade" for="message">Message <span class="text-green-500">*</span></label>
                         <textarea data-aos="fade" name="text" id="message" class="bg-[#191919] border focus:border-2 focus:border-green-900 outline-none  rounded-lg h-[10rem] w-full pl-2 pt-2 text-gray-500"> Ecrivez votre message... </textarea>
     
                     </div>
                     <div data-aos="fade" class="position relative w-full h-[3rem] lg:flex justify-center">
-                        <button data-aos="fade-down" type="submit" class="bg-green-700 text-white rounded-xl px-4 py-2 transition ease-in-out duration-500 hover:bg-green-400" onclick="sendEmail()">
+                        <button data-aos="fade-down" type="submit" class="bg-green-700 text-white rounded-xl px-4 py-2 transition ease-in-out duration-500 hover:bg-green-400" id="submit">
                             Soumettre
                         </button>
                     </div>

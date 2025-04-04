@@ -35,10 +35,24 @@ document.addEventListener(`DOMContentLoaded`,()=>{
         let emailValues = {
             name : document.querySelector(`#name`).value,
             email : document.querySelector(`#email`).value,
+            subject : document.querySelector(`#subject`).value,
             message : document.querySelector(`#message`).value
-        }
-        emailjs.send(`service_m3q0p4q`,`template_tumtlw7`,emailValues).then(alert(`Mesage envoyé avec succès`))
+        };
+        emailjs.send(`service_m3q0p4q`,`template_tumtlw7`,emailValues)
+        .then(()=>{
+            alert(`Mesage envoyé avec succès`)
+        })
+        .catch((error)=>{
+            alert(`Une erreur est survenue. Réessayez.`);
+            console.error(`Echec de l'envoie`, error);
+            
+        });
+        console.log(`message envoyer`);
+        form.reset()
+        
     }
+    const submitForm = document.querySelector(`#form`);
+    submitForm.addEventListener(`submit`,sendEmail);
     
 
     
