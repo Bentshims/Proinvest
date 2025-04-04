@@ -142,43 +142,66 @@
     
 </body>
 </html> -->
-
-
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Tiroir</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <link rel="stylesheet" href="styles.css"> -->
-    <script defer src="index.js"></script>
-    <style>
-        body {
-            transition: background 0.3s ease-in-out;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Défilement Logos Partenaires</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes logo {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
 
-    </style>
+    .animate-logo {
+      animation: logo 20s linear infinite;
+    }
+
+    .logo-track {
+      display: flex;
+      gap: 5rem;
+    }
+
+    .logos-container {
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  </style>
 </head>
-<body class="bg-gray-500">
+<body class="bg-white text-gray-800">
+  <section class="py-20 px-8 bg-gray-100 border-4 border-green-800 overflow-hidden">
+    <h2 class="text-center text-4xl font-bold mb-20 text-[#2E3A43]">Nos Partenaires</h2>
 
-    <!-- Bouton Menu Burger -->
-    <button id="menuButton" class="p-3 fixed top-4 left-4 bg-gray-800 text-white rounded">
-        ☰
-    </button>
-
-    <!-- Menu Tiroir -->
-    <div id="drawerMenu" class="fixed top-0 left-0 h-full w-1/2 bg-white shadow-lg transform transition-transform duration-300 p-6">
-        <button id="closeButton" class="absolute top-4 right-4 text-xl">✖</button>
-        
-        <nav class="mt-10 space-y-4 text-lg">
-            <a href="#" class="block hover:text-blue-600">Accueil</a>
-            <a href="#" class="block hover:text-blue-600">Nos Programmes</a>
-            <a href="#" class="block hover:text-blue-600">Contact</a>
-        </nav>
+    <div id="container-logo" class="logos-container flex items-center">
+      <div id="partner-logos" class="logo-track animate-logo">
+        <img src="https://via.placeholder.com/150x80?text=Logo+1" alt="logo1" class="h-20 w-auto" />
+        <img src="https://via.placeholder.com/150x80?text=Logo+2" alt="logo2" class="h-20 w-auto" />
+        <img src="https://via.placeholder.com/150x80?text=Logo+3" alt="logo3" class="h-20 w-auto" />
+        <img src="https://via.placeholder.com/150x80?text=Logo+4" alt="logo4" class="h-20 w-auto" />
+        <img src="https://via.placeholder.com/150x80?text=Logo+5" alt="logo5" class="h-20 w-auto" />
+        <img src="https://via.placeholder.com/150x80?text=Logo+6" alt="logo6" class="h-20 w-auto" />
+      </div>
     </div>
+  </section>
 
-    <!-- <script src="script.js"></script> -->
+  <script>
+    const containerLogo = document.querySelector('#container-logo');
+    const logos = document.querySelector('#partner-logos');
+    const logoClone = logos.cloneNode(true);
+    logoClone.id = "partner-logos-clone";
+    containerLogo.appendChild(logoClone);
+  </script>
 </body>
 </html>
+
+
+<p>
+  service ID " service_m3q0p4q ""
+</p>
+

@@ -22,6 +22,27 @@ document.addEventListener(`DOMContentLoaded`,()=>{
 
         })
     })
+
+    // const containerLogo = document.querySelector(`#container-logo`);
+    // const logos = document.querySelector(`#partner-logos`);
+    // console.log(containerLogo,logos);
+    // let logoClone = logos.cloneNode(true);
+    // containerLogo.appendChild(logoClone);
+    // console.log(logoClone);
+
+    function sendEmail(e){
+        e.preventDefault();
+        let emailValues = {
+            name : document.querySelector(`#name`).value,
+            email : document.querySelector(`#email`).value,
+            message : document.querySelector(`#message`).value
+        }
+        emailjs.send(`service_m3q0p4q`,`template_tumtlw7`,emailValues).then(alert(`Mesage envoyé avec succès`))
+    }
+    
+
+    
+
     
 
 

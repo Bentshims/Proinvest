@@ -16,10 +16,10 @@
  
 @keyframes logo {
     0% {
-        transform: translateX(100%);
+        transform: translateX(0%);
     }
     100% {
-        transform: translateX(-300%);
+        transform: translateX(-200%);
     }
 }
 .animate-logo{
@@ -56,3 +56,4 @@
 .close{
     transform: translateX(-100%);
 } */
+
