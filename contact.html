@@ -23,7 +23,7 @@
 
     <title>contact</title>
 </head>
-<body class="bg-black text-white">
+<body class="bg-black text-white" id="contact">
     <header class="flex items-center justify-between py-4 px-2 positio relative">
         <div>
             <img src="logo.svg" alt="" class="logo w-[4rem]">
@@ -66,15 +66,27 @@
                 </div>
             </div>
         </div>
-       
+        
     </header>
  
     <main>
+        <section class="hero-section relative w-screen h-[20rem] overflow-hidden flex items-center text-center justify-center">
+            <video autoplay muted playsinline loop class="absolute inset-0 z-[-2] object-cover w-screen h-full">
+                <source src="video-c.mp4" type="video/mp4">
+            </video>
+            <div class="filter bg-black opacity-60 absolute z-[-1] inset-0">
 
-        <section class="section-principal w-screen h-auto">
-            <img src="Doing your part to leave the earth better than you found it is incredibly important! Take a look at some of the easiest ways to pitch in and Recycle_.jpeg" alt="photo principal " class="w-full h-auto">
+            </div>
 
-            
+            <div class="space-y-5">
+                <h1 class="text-4xl font-bold lg:text-6xl">
+                    Contactez-nous pour plus d’informations
+                </h1>
+                <p class="text-lg">
+                    Notre équipe est disponible pour répondre à toutes vos questions.
+                </p>
+
+            </div>
         </section>
         <section data-aos="fade" class="section-troisieme px-[20px] py-[64px]">
             <div>
@@ -211,11 +223,11 @@
                         </p>
                     </div>
                 </div>
-                <div class="flex justify-center">
+                <!-- <div class="flex justify-center">
                     <button data-aos="fade-down" class="bg-green-700 text-white rounded-xl px-4 py-2 transition ease-in-out duration-500 hover:bg-green-400 scale-object">
                         Je fais Un don
                     </button>
-                </div>
+                </div> -->
             </div>
             <img data-aos="fade" src="Doing your part to leave the earth better than you found it is incredibly important! Take a look at some of the easiest ways to pitch in and Recycle_.jpeg" alt="" class="rounded-lg h-[16rem] md:h-auto mt-10">
 

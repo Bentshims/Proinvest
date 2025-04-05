@@ -30,40 +30,54 @@ document.addEventListener(`DOMContentLoaded`,()=>{
     // containerLogo.appendChild(logoClone);
     // console.log(logoClone);
 
-    function sendEmail(e){
-        e.preventDefault();
-        let emailValues = {
-            name : document.querySelector(`#name`).value,
-            email : document.querySelector(`#email`).value,
-            subject : document.querySelector(`#subject`).value,
-            message : document.querySelector(`#message`).value
-        };
-        emailjs.send(`service_m3q0p4q`,`template_tumtlw7`,emailValues)
-        .then(()=>{
-            alert(`Mesage envoyé avec succès`)
-        })
-        .catch((error)=>{
-            alert(`Une erreur est survenue. Réessayez.`);
-            console.error(`Echec de l'envoie`, error);
+
+
+    const contactPage = document.querySelector(`#contact`);
+    console.log(contactPage);
+    
+
+    if (contactPage) {
+        function sendEmail(e){
+            e.preventDefault();
+            let emailValues = {
+                name : document.querySelector(`#name`).value,
+                email : document.querySelector(`#email`).value,
+                subject : document.querySelector(`#subject`).value,
+                message : document.querySelector(`#message`).value
+            };
+            emailjs.send(`service_m3q0p4q`,`template_tumtlw7`,emailValues)
+            .then(()=>{
+                alert(`Mesage envoyé avec succès`)
+            })
+            .catch((error)=>{
+                alert(`Une erreur est survenue. Réessayez.`);
+                console.error(`Echec de l'envoie`, error);
+                
+            });
+            console.log(`message envoyer`);
+            form.reset()
             
-        });
-        console.log(`message envoyer`);
-        form.reset()
-        
+        }
+        const submitForm = document.querySelector(`#form`);
+        submitForm.addEventListener(`submit`,sendEmail);
     }
-    const submitForm = document.querySelector(`#form`);
-    submitForm.addEventListener(`submit`,sendEmail);
-    
 
-    
 
     
 
 
-  
-   
 
-    
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -73,6 +87,7 @@ document.addEventListener(`DOMContentLoaded`,()=>{
 
 
     // animation texte 
+    
     AOS.init({
     duration: 1700,
     easing:`ease-in`,
