@@ -16,14 +16,14 @@
  
 @keyframes logo {
     0% {
-        transform: translateX(0%);
+        transform: translateX(50%);
     }
     100% {
-        transform: translateX(-200%);
+        transform: translateX(-250%);
     }
 }
 .animate-logo{
-    animation: logo linear infinite 10s;
+    animation: logo linear infinite 20s;
 }
 
 /*         
