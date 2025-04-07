@@ -15,22 +15,17 @@ document.addEventListener(`DOMContentLoaded`,()=>{
     
     closeoverlays.forEach(closeoverlay =>{
         closeoverlay.addEventListener(`click`,()=>{
-            // if (!(overlayContainer.classList.contains(`-translate-x-full`))) {
-            // overlayContainer.classList.add(`-translate-x-full`);
-            // }
             overlayContainer.classList.add(`-translate-x-full`);
 
         })
     })
 
-    // const containerLogo = document.querySelector(`#container-logo`);
-    // const logos = document.querySelector(`#partner-logos`);
-    // console.log(containerLogo,logos);
-    // let logoClone = logos.cloneNode(true);
-    // containerLogo.appendChild(logoClone);
-    // console.log(logoClone);
 
 
+
+    // Gestion du formulaire 
+
+    
 
     const contactPage = document.querySelector(`#contact`);
     console.log(contactPage);
